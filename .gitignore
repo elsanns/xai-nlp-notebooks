@@ -1,0 +1,7 @@
+# Ignore
+**/logs/
+**/results/
+*.egg-info/
+__pycache__/
+.idea
+.ipynb_checkpoints
