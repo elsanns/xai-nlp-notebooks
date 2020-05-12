@@ -15,3 +15,7 @@ All attributions together account for the difference between the model's predict
 
 In the examples below we will consider various baselines and see how they influence assigning importance to features.
 We will see that, for each sample, attributions sum up to the difference between model's output for the sample and the *expected value* (model's output for the baseline used to compute attributions).
+
+Architecture | 
+------------ | 
+<img src="imgs/attr-features-1.png" width="600px" style="max-width:100%"> | 
