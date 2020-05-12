@@ -16,6 +16,18 @@ All attributions together account for the difference between the model's predict
 In the examples below we will consider various baselines and see how they influence assigning importance to features.
 We will see that, for each sample, attributions sum up to the difference between model's output for the sample and the *expected value* (model's output for the baseline used to compute attributions).
 
-Architecture | 
+## Attributions explain prediction
+<img src="imgs/explain-diff-ig.png" width="800px" style="max-width:100%"> | 
 ------------ | 
-<img src="imgs/attr-features-1.png" width="600px" style="max-width:100%"> | 
+Attributions sum up to the difference between model's output and the expected value (model's output for the baseline vector).
+
+## Features and attributions
+<img src="imgs/attr-features-1.png" width="800px" style="max-width:100%"> | 
+------------ | 
+The diagrams below show how high and low values of features are distributed across the range of attributions assigned by IG and SHAP for various baselines. For some features, high values of the feature (in red) correlate with high values of attributions (x-axis), for some they gather in the lower range or there is no clear correlation.  |
+
+## Impact of features
+<img src="imgs/features-sum-12.png" width="800px" style="max-width:100%"> | 
+------------ | 
+Accumulated feature importance varies more between baselines than it does between attribution methods. One intuitive explanation is that since both methods use a baseline to stand for a missing value, features that have close to monotonic relationship to the target will be more consistently attributed a higher absolute impact when replaced by a zero.
+
