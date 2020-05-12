@@ -1,8 +1,11 @@
-captumig-shap-baselines <a href="#test">goto</a> [notebook](https://captum.ai/api/integrated_gradients.html)
+# Content
+---
 
-<a name="test">test here</a>
+captumig-shap-baselines <a href="#captumigshapbaseline-anchor">goto</a> [notebook](captumIg_shap_baselines.ipynb)
 
-# <a name="">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
+
+# <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
+---
 
 This notebook contains an example of two feature attribution methods applied to a PyTorch model predicting fuel efficiency for the [Auto MPG Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data). 
 
