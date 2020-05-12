@@ -1,7 +1,6 @@
 # Content
----
 
-captumig-shap-baselines <a href="#captumigshapbaseline-anchor">goto</a> [notebook](captumIg_shap_baselines.ipynb)
+- <a href="#captumigshapbaseline-anchor">captumig-shap-baselines</a> [(notebook)](captumIg_shap_baselines.ipynb)
 
 
 # <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
