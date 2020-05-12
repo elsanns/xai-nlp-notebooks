@@ -1,10 +1,10 @@
-# Content
+## Content
 ---
 
 - <a href="#captumigshapbaseline-anchor">captumig-shap-baselines</a> [(notebook)](captumIg_shap_baselines.ipynb)
 
 
-# <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
+## <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
 ---
 
 This notebook contains an example of two feature attribution methods applied to a PyTorch model predicting fuel efficiency for the [Auto MPG Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data). 
@@ -23,21 +23,21 @@ All attributions together account for the difference between the model's predict
 In the examples below we will consider various baselines and see how they influence assigning importance to features.
 We will see that, for each sample, attributions sum up to the difference between model's output for the sample and the *expected value* (model's output for the baseline used to compute attributions).
 
-## Attributions explain prediction
+### Attributions explain prediction
 ---
 
 <img src="imgs/explain-diff-ig.png" width="800px" style="max-width:100%"> | 
 ------------ | 
 Attributions sum up to the difference between model's output and the expected value (model's output for the baseline vector).
 
-## Features and attributions
+### Features and attributions
 ---
 
 <img src="imgs/attr-features-1.png" width="800px" style="max-width:100%"> | 
 ------------ | 
 The diagrams show how high and low values of features are distributed across the range of attributions assigned by IG and SHAP for various baselines. For some features, high values of the feature (in red) correlate with high values of attributions (x-axis), for some they gather in the lower range or there is no clear correlation.  |
 
-## Impact of features
+### Impact of features
 ---
 
 <img src="imgs/features-sum-12.png" width="800px" style="max-width:100%"> | 
