@@ -1,7 +1,7 @@
 ## Content
 ---
 
-- <a href="#captumigshapbaseline-anchor">captumig-shap-baselines</a> ([notebook](captumIg_shap_baselines.ipynb), [Colab notebook](https://colab.research.google.com/drive/1NVq-CVGJhoNZJHgR-EeJAIGz7BDJdLDL?usp=sharing))
+- <a href="#captumigshapbaseline-anchor">captumig-shap-baselines</a> ([notebook](captumIg_shap_baselines.ipynb), [Colab notebook](https://colab.research.google.com/github/elsanns/xai-nlp-notebooks/blob/master/captumIg_shap_baselines.ipynb))
 
 ## <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
 ---
