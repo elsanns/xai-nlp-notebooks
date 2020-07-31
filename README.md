@@ -24,6 +24,10 @@ The notebook is based on the [Hugging Face documentation](https://huggingface.co
 ---
 <img src="imgs/electra-attr-positive-positive.png" width="800px" style="max-width:100%">
 
+### Attributions for a correctly classified negative example
+---
+<img src="imgs/electra-attr-negative-negative.png" width="800px" style="max-width:100%">
+
 <br/><br/>
 
 ## <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
