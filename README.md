@@ -28,7 +28,7 @@ The notebook is based on the [Hugging Face documentation](https://huggingface.co
 ---
 <img src="imgs/electra-attr-negative-negative.png" width="800px" style="max-width:100%">
 
-### Attributions for a negative sample misclassified as positve
+### Attributions for a negative sample misclassified as positive
 ---
 <img src="imgs/electra-attr-negative-positive.png" width="800px" style="max-width:100%">
 ---
