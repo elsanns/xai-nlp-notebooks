@@ -7,6 +7,19 @@
 ## <a name="electraig-anchor">Fine-tuning Electra and interpreting with Captum Integrated Gradients</a>
 ---
 
+This notebook contains an example of [fine-tuning](https://huggingface.co/transformers/training.html) an [Electra](https://huggingface.co/transformers/model_doc/electra.html) model on the [GLUE SST-2](https://nlp.stanford.edu/sentiment/index.html) dataset. After fine-tuning, the [Integrated Gradients](https://arxiv.org/pdf/1703.01365.pdf) **interpretability** method is applied to compute tokens' attributions for each target class. 
+* We will instantiate a pre-trained Electra model from the [Transformers](https://huggingface.co/transformers/) library. 
+* The data is downloaded from the [nlp](https://huggingface.co/nlp/) library. The input text is tokenized with [ElectraTokenizerFast](https://huggingface.co/transformers/model_doc/electra.html#electratokenizerfast) tokenizer backed by HF [tokenizers](https://huggingface.co/transformers/main_classes/tokenizer.html) library.
+* **Fine-tuning** for sentiment analysis is handled by the [Trainer](https://huggingface.co/transformers/main_classes/trainer.html) class. 
+* After fine-tuning, the [Integrated Gradients](https://captum.ai/api/integrated_gradients.html) interpretability algorithm will assign importance scores to
+input tokens. We will use a **PyTorch** implementation from the [Captum](https://captum.ai/) library. 
+  - The algorithm requires providing a reference sample (a baseline) since importance attribution is performed based on the model's output, as inputs change from reference values to the actual sample. 
+  - The Integrated Gradients method satisfies the [completeness](http://theory.stanford.edu/~ataly/Talks/sri_attribution_talk_jun_2017.pdf) property. We will look at the sum of attributions for a sample and show that the sum approximates (explains) prediction's shift from the baseline value. 
+* The final sections of this notebook contain a colour-coded **visualization** of attribution results made with *captum.attr.visualization* library.
+
+The notebook is based on the [Hugging Face documentation](https://huggingface.co/) and the implementation of Integrated Gradient attribution methods is adapted from the Captum.ai
+[Interpreting BERT Models (Part 1)](https://captum.ai/tutorials/Bert_SQUAD_Interpret).
+
 ## <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
 ---
 
