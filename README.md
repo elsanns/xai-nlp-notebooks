@@ -20,6 +20,8 @@ input tokens. We will use a **PyTorch** implementation from the [Captum](https:/
 The notebook is based on the [Hugging Face documentation](https://huggingface.co/) and the implementation of Integrated Gradient attribution methods is adapted from the Captum.ai
 [Interpreting BERT Models (Part 1)](https://captum.ai/tutorials/Bert_SQUAD_Interpret).
 
+<br/><br/>
+
 ## <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
 ---
 
