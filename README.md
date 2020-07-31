@@ -34,7 +34,7 @@ Attributions sum up to the difference between the model's output and the expecte
 
 <img src="imgs/attr-features-1.png" width="800px" style="max-width:100%"> | 
 ------------ | 
-The diagrams show how high and low values of features are distributed across the range of attributions assigned by IG and SHAP for various baselines. For some features, high values of the feature (in red) correlate with high values of attributions (x-axis), for some they gather in the lower range or there is no clear correlation.  |
+The diagrams show how high and low values of features are distributed across the range of attributions assigned by IG and SHAP for various baselines. For some features, high values of the feature (in red) correlate with high values of attributions (x-axis), for some, they gather in the lower range or there is no clear correlation.  |
 
 ### Impact of features
 ---
