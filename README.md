@@ -31,7 +31,6 @@ The notebook is based on the [Hugging Face documentation](https://huggingface.co
 ### Attributions for a negative sample misclassified as positive
 ---
 <img src="imgs/electra-attr-negative-positive.png" width="800px" style="max-width:100%">
----
 
 <br/><br/>
 
