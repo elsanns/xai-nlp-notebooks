@@ -23,6 +23,8 @@ The notebook is based on the [Hugging Face documentation](https://huggingface.co
 ### Attributions for a correctly classified positive example
 ---
 <img src="imgs/electra-attr-positive-positive.png" width="800px" style="max-width:100%"> | 
+------------ | 
+Attributions sum up to the difference between the model's output and the expected value (model's output for the baseline vector).
 
 <br/><br/>
 
