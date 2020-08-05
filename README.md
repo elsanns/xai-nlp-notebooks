@@ -20,6 +20,12 @@ input tokens. We will use a **PyTorch** implementation from the [Captum](https:/
 The notebook is based on the [Hugging Face documentation](https://huggingface.co/) and the implementation of Integrated Gradients attribution methods is adapted from the Captum.ai
 [Interpreting BERT Models (Part 1)](https://captum.ai/tutorials/Bert_SQUAD_Interpret).
 
+### Visualization
+Captum visualization library shows in green tokens that push the prediction towards the target class. Those driving the score towards the reference value are marked in red. As a result, words perceived as positive will appear in green if attribution is performed against class 1 (positive) but will be highlighted in red with an attribution targeting class 0 (negative).
+
+Because importance scores ar assigned to tokens, not words, some examples may show that attribution is highly dependent on tokenization.
+
+
 ### Attributions for a correctly classified positive example
 ---
 <img src="imgs/electra-attr-positive-positive.png" width="800px" style="max-width:100%">
@@ -31,11 +37,6 @@ The notebook is based on the [Hugging Face documentation](https://huggingface.co
 ### Attributions for a negative sample misclassified as positive
 ---
 <img src="imgs/electra-attr-negative-positive.png" width="800px" style="max-width:100%">
-
-### Visualization
-Captum visualization library shows in green tokens that push the prediction towards the target class. Those driving the score towards the reference value are marked in red. As a result, words perceived as positive will appear in green if attribution is performed against class 1 (positive) but will be highlighted in red with an attribution targeting class 0 (negative).
-
-Because importance scores ar assigned to tokens, not words, some examples may show that attribution is highly dependent on tokenization.
 
 <br/><br/>
 
