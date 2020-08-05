@@ -17,7 +17,7 @@ input tokens. We will use a **PyTorch** implementation from the [Captum](https:/
   - The Integrated Gradients method satisfies the [completeness](http://theory.stanford.edu/~ataly/Talks/sri_attribution_talk_jun_2017.pdf) property. We will look at the sum of attributions for a sample and show that the sum approximates (explains) prediction's shift from the baseline value. 
 * The final sections of this notebook contain a colour-coded **visualization** of attribution results made with *captum.attr.visualization* library.
 
-The notebook is based on the [Hugging Face documentation](https://huggingface.co/) and the implementation of Integrated Gradient attribution methods is adapted from the Captum.ai
+The notebook is based on the [Hugging Face documentation](https://huggingface.co/) and the implementation of Integrated Gradients attribution methods is adapted from the Captum.ai
 [Interpreting BERT Models (Part 1)](https://captum.ai/tutorials/Bert_SQUAD_Interpret).
 
 ### Attributions for a correctly classified positive example
