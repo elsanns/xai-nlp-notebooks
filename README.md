@@ -14,7 +14,7 @@ This notebook contains an example of [fine-tuning](https://huggingface.co/transf
 * After fine-tuning, the [Integrated Gradients](https://captum.ai/api/integrated_gradients.html) interpretability algorithm will assign importance scores to
 input tokens. We will use a **PyTorch** implementation from the [Captum](https://captum.ai/) library. 
   - The algorithm requires providing a reference sample (a baseline) since importance attribution is performed based on the model's output, as inputs change from reference values to the actual sample. 
-  - The Integrated Gradients method satisfies the [completeness](http://theory.stanford.edu/~ataly/Talks/sri_attribution_talk_jun_2017.pdf) property. We will look at the sum of attributions for a sample and show that the sum approximates (explains) prediction's shift from the baseline value. 
+  - The Integrated Gradients method satisfies the **completeness** property. We will look at the sum of attributions for a sample and show that the sum approximates (explains) prediction's shift from the baseline value. 
 * The final sections of this notebook contain a colour-coded **visualization** of attribution results made with *captum.attr.visualization* library.
 
 The notebook is based on the [Hugging Face documentation](https://huggingface.co/) and the implementation of Integrated Gradients attribution methods is adapted from the Captum.ai
