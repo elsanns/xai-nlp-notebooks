@@ -41,6 +41,17 @@ Because importance scores ar assigned to tokens, not words, some examples may sh
 
 <br/><br/>
 
+## <a name="bart-twolangs-anchor">Fine-tuning BART for summarization in two languages</a>
+---
+
+In a world of ever-growing amount of data, the task of automatically creating a coherent and fluent summary is gaining importance. Presenting texts in a shorter concise form, can help to derive value from large volumes of text.
+
+This notebook contains an example of fine-tuning [Bart](https://huggingface.co/transformers/model_doc/bart.html) for generating summaries of article sections from the [WikiLingua](https://huggingface.co/datasets/wiki_lingua) dataset. WikiLingua is a multilingual set of articles. We will run the same code for two Bart checkpoints, including a non-English model from the [Hugging Face Model Hub](https://huggingface.co/models). We will be using:
+- the **English** portion of WikiLingua with [sshleifer/distilbart-xsum-12-3](https://huggingface.co/sshleifer/distilbart-xsum-12-3) Bart checkpoint, and
+- **French** articles from the WikiLingua with the [moussaKam/barthez-orangesum-abstract](https://huggingface.co/moussaKam/barthez-orangesum-abstract) model.
+
+<br/><br/>
+
 ## <a name="captumigshapbaseline-anchor">Captum Integrated Gradients and SHAP for a PyTorch MPG prediction model</a>
 ---
 
