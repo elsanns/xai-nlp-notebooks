@@ -2,6 +2,7 @@
 ---
 
 - <a href="#electraig-anchor">electra_fine_tune_interpret_captum_ig</a> ([notebook](electra_fine_tune_interpret_captum_ig.ipynb), [Colab notebook](https://colab.research.google.com/github/elsanns/xai-nlp-notebooks/blob/master/electra_fine_tune_interpret_captum_ig.ipynb))
+- <a href="#bart-twolangs-anchor">fine_tune_bart_summarization_two_langs</a> ([notebook](fine_tune_bart_summarization_two_langs.ipynb), [Colab notebook](https://colab.research.google.com/github/elsanns/xai-nlp-notebooks/blob/master/fine_tune_bart_summarization_two_langs.ipynb))
 - <a href="#captumigshapbaseline-anchor">captumig-shap-baselines</a> ([notebook](captumIg_shap_baselines.ipynb), [Colab notebook](https://colab.research.google.com/github/elsanns/xai-nlp-notebooks/blob/master/captumIg_shap_baselines.ipynb))
 
 ## <a name="electraig-anchor">Fine-tuning Electra and interpreting with Captum Integrated Gradients</a>
